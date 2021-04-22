@@ -1,0 +1,4 @@
+/* grab all spans */
+form > span{
+    color: red;
+}
