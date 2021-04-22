@@ -7,4 +7,4 @@ https://www.typescriptlang.org/
 ## Goals
 - Learning how to use source control.
 - Practice making commits.
-- Use TypeScript files.
+- Using HTML, CSS, JavaScript, and TypeScript files.
