@@ -2,10 +2,10 @@
 In-class project, learning more about source control and TypeScript.
 
 ## Website
-Go to: [current project](https://marysaray.github.io/FormValidation/)
+**Go to:** *[current project](https://marysaray.github.io/FormValidation/)*
 
 ## TypeScript Official Site
-Go to source page: https://www.typescriptlang.org/
+**Go to source page:** *https://www.typescriptlang.org/*
 
 ## Goals
 - Learning how to use source control.
