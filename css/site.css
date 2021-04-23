@@ -7,13 +7,10 @@ body{
     background-color: gray;
     color: plum;
 }
-<<<<<<< HEAD
  /* center heading */
 h1{
     text-align: center;
 }
-=======
->>>>>>> 2f6c136bac2f94ff3839180740d908689b1186db
 /* spaces between text boxes. */
 input[type=text]{
     margin-bottom: 1em;
@@ -23,23 +20,16 @@ form > label{
     display: inline-block;
     text-align: right;
     width: 50%;
-<<<<<<< HEAD
     margin-right: .5em;
-=======
-    margin-right: 1.5em;
->>>>>>> 2f6c136bac2f94ff3839180740d908689b1186db
 }
 /* align button */
 form > button{
     margin-left: 50%;
 }
-<<<<<<< HEAD
 /* center labels */
 form{
     padding-right: 4em;
 }
-=======
->>>>>>> 2f6c136bac2f94ff3839180740d908689b1186db
 /* screen size display for different devices. */
 @media only screen and (max-width: 475px){
     /* for smaller screens */
@@ -47,10 +37,6 @@ form{
         text-align: left;
         width: 100%;
     }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 2f6c136bac2f94ff3839180740d908689b1186db
     form > button{
         margin-left: 0%;
     }
