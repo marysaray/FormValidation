@@ -1,15 +1,18 @@
 /* grab all spans */
 form > span{
-    color: red;
+    color: purple;
 }
 /* background and text color */
 body{
     background-color: gray;
     color: plum;
+    margin-left: 5%;
+    margin-right: 5%;
 }
- /* center heading */
-h1{
+ /* formatting letters */
+h1, form label, form button, form input, form span{
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 /* spaces between text boxes. */
 input[type=text]{
@@ -22,9 +25,17 @@ form > label{
     width: 50%;
     margin-right: .5em;
 }
-/* align button */
+/* button features */
 form > button{
     margin-left: 50%;
+    border-radius: .3em;
+    background-color: plum;
+    color: white;
+    cursor: pointer;
+}
+/* hover effect */
+button:hover{
+    background-color: purple;
 }
 /* center labels */
 form{
