@@ -4,8 +4,21 @@ window.onload = function () {
 };
 function main() {
     console.log("submit button was clicked.");
+    resetErrorMessages();
     isTextValid("first-name", "First Name is required!");
     isTextValid("last-name", "Last Name is required!");
+}
+function resetErrorMessages() {
+    var allSpans = document.querySelectorAll("form span");
+    for (var i = 0; i < allSpans.length; i++) {
+        var currSpan = allSpans[i];
+        if (currSpan.hasAttribute("data-required")) {
+            currSpan.innerText = "*";
+        }
+        else {
+            currSpan.innerText = "";
+        }
+    }
 }
 function isTextValid(id, errMsg) {
     var textBox = document.getElementById(id);

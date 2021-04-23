@@ -2,3 +2,42 @@
 form > span{
     color: red;
 }
+/* background and text color */
+body{
+    background-color: gray;
+    color: plum;
+}
+ /* center heading */
+h1{
+    text-align: center;
+}
+/* spaces between text boxes. */
+input[type=text]{
+    margin-bottom: 1em;
+}
+/* align lables */
+form > label{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+    margin-right: .5em;
+}
+/* align button */
+form > button{
+    margin-left: 50%;
+}
+/* center labels */
+form{
+    padding-right: 4em;
+}
+/* screen size display for different devices. */
+@media only screen and (max-width: 475px){
+    /* for smaller screens */
+    form > label{
+        text-align: left;
+        width: 100%;
+    }
+    form > button{
+        margin-left: 0%;
+    }
+}

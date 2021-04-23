@@ -14,9 +14,33 @@ window.onload = function(){
  * and span directly after <input type="text"> siblingElement.
  */
 function main():void {
-    console.log("submit button was clicked.");  
+    console.log("submit button was clicked."); 
+    resetErrorMessages(); 
     isTextValid("first-name", "First Name is required!");
     isTextValid("last-name", "Last Name is required!");     
+}
+/**
+ * This function resets all the span
+ * back to the custom default setting.
+ */
+function resetErrorMessages():void{
+    // get all the spans in the form.
+    let allSpans = document.querySelectorAll("form span");
+    // goes through all the spans.
+    for(let i = 0; i < allSpans.length; i++){
+        // checks each individual span.
+        let currSpan =
+            // to use property cast <HTMLElement>
+            <HTMLElement>allSpans[i];
+        if(currSpan.hasAttribute("data-required")){
+            // clear messages revert to custom format.
+            currSpan.innerText = "*";
+        }
+        else{
+            // not required is blank.
+            currSpan.innerText = "";
+        }
+    }
 }
 /**
  * This function will validate any input box.
