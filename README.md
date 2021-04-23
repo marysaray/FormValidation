@@ -2,7 +2,7 @@
 In-class project, learning more about source control and TypeScript.
 
 ## Website
-link: [current project](https://marysaray.github.io/FormValidation/)
+Go to: [current project](https://marysaray.github.io/FormValidation/)
 
 ## TypeScript Official Site
 Go to source page: https://www.typescriptlang.org/
