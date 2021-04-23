@@ -7,6 +7,9 @@ function main() {
     resetErrorMessages();
     isTextValid("first-name", "First Name is required!");
     isTextValid("last-name", "Last Name is required!");
+    checkDateFormat();
+}
+function checkDateFormat() {
     var dobTextBox = document.getElementById("dob");
     var dob = dobTextBox.value;
     if (!isValidDate(dob)) {

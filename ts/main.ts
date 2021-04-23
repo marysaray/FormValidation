@@ -18,12 +18,17 @@ function main():void {
     resetErrorMessages(); 
     isTextValid("first-name", "First Name is required!");
     isTextValid("last-name", "Last Name is required!"); 
-    // validate date
-    let dobTextBox = 
+    checkDateFormat();
+}
+/**
+ * This function validates the date format.
+ */
+function checkDateFormat():void {
+    let dobTextBox =
         // cast for <input> property for value.
-        <HTMLInputElement>document.getElementById("dob");  
+        <HTMLInputElement>document.getElementById("dob");
     let dob = dobTextBox.value;
-    if(!isValidDate(dob)){
+    if (!isValidDate(dob)) {
         // error message
         let errSpan = dobTextBox.nextElementSibling;
         errSpan.innerHTML = "Format ex: mm/dd/yyyy.";
