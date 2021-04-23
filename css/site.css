@@ -10,7 +10,7 @@ body{
     margin-right: 5%;
 }
  /* formatting letters */
-h1, form label, form button, form input, form span{
+h1, form label, form button, form span{
     text-align: center;
     font-family: 'Playfair Display', serif;
 }

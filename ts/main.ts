@@ -17,7 +17,31 @@ function main():void {
     console.log("submit button was clicked."); 
     resetErrorMessages(); 
     isTextValid("first-name", "First Name is required!");
-    isTextValid("last-name", "Last Name is required!");     
+    isTextValid("last-name", "Last Name is required!"); 
+    // validate date
+    let dobTextBox = 
+        // cast for <input> property for value.
+        <HTMLInputElement>document.getElementById("dob");  
+    let dob = dobTextBox.value;
+    if(!isValidDate(dob)){
+        // error message
+        let errSpan = dobTextBox.nextElementSibling;
+        errSpan.innerHTML = "Format ex: mm/dd/yyyy.";
+        // one line of code.
+        // dobTextBox.nextElementSibling.innerHTML= "Format ex: mm/dd/yyyy";
+    }
+}
+/**
+ * This function validates date format.
+ * mm/dd/yyyy
+ * m/d/yyyy
+ * @param input 
+ * @returns 
+ */
+function isValidDate(input:string):boolean{
+    // \d{1,2}\/\d{1,2}\/\d{4}
+    let pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/g;
+    return pattern.test(input);
 }
 /**
  * This function resets all the span
