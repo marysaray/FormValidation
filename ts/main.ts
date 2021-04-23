@@ -28,7 +28,7 @@ function main():void {
 function displayMsg() {
     let msgHeading = document.createElement("h2");
     msgHeading.innerText = "Form is processing...";
-    // DOM : create a class throught JavaScript.
+    // DOM : create a class through JavaScript.
     msgHeading.setAttribute("class", "message");
     // insert a sibling element
     let title = document.querySelector("h1");

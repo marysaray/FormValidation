@@ -1,6 +1,6 @@
 /* grab all spans */
 form > span{
-    color: purple;
+    color: plum;
 }
 /* background and text color */
 body{
@@ -20,7 +20,7 @@ input[type=text]{
 }
 /* align lables */
 form > label{
-    color: white;
+    color: whitesmoke;
     display: inline-block;
     text-align: right;
     width: 50%;
