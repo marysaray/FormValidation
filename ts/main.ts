@@ -19,6 +19,24 @@ function main():void {
     isTextValid("first-name", "First Name is required!");
     isTextValid("last-name", "Last Name is required!"); 
     checkDateFormat();
+    displayMsg();
+}
+/**
+ * This function will display a message
+ * after the submit button has been clicked.
+ */
+function displayMsg() {
+    let msgHeading = document.createElement("h2");
+    msgHeading.innerText = "Form is processing...";
+    // DOM : create a class throught JavaScript.
+    msgHeading.setAttribute("class", "message");
+    // insert a sibling element
+    let title = document.querySelector("h1");
+    title.insertAdjacentElement("afterend", msgHeading);
+    // remove message 
+    setTimeout(function(){
+        msgHeading.remove();
+    }, 1000)
 }
 /**
  * This function validates the date format.

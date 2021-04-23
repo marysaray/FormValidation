@@ -8,6 +8,17 @@ function main() {
     isTextValid("first-name", "First Name is required!");
     isTextValid("last-name", "Last Name is required!");
     checkDateFormat();
+    displayMsg();
+}
+function displayMsg() {
+    var msgHeading = document.createElement("h2");
+    msgHeading.innerText = "Form is processing...";
+    msgHeading.setAttribute("class", "message");
+    var title = document.querySelector("h1");
+    title.insertAdjacentElement("afterend", msgHeading);
+    setTimeout(function () {
+        msgHeading.remove();
+    }, 1000);
 }
 function checkDateFormat() {
     var dobTextBox = document.getElementById("dob");
